@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -21,27 +22,37 @@
     
     <section class="CoffeBackground">
         <form action="">
+            <h1>Area do Cliente</h1>
             <ul class="ul-form">
-                <h1>Area do Cliente</h1>
-                <img src="/img/tea-cup.png" alt="" class="img-cafe">
                 <li>
-                    <label for="text"><img src="/img/user.png" alt="" class="img-form"></label>
-                    <input type="text" placeholder="Usuario:">
+                    <div class="campo">
+                        <img src="/img/user.png" alt="" class="img-form">
+                        <input type="text" placeholder="Usuario:">
+                    </div>
                 </li>
+
                 <li>
-                    <label for=""><img src="/img/email.png" alt="" class="img-form"></label>
-                    <input type="email" placeholder="Email:">
+                    <div class="campo">
+                        <img src="/img/email.png" alt="" class="img-form">
+                        <input type="email" placeholder="Email:">
+                    </div>
                 </li>
+
                 <li>
-                    <label for="numeber"><img src="/img/telephone.png" alt="" class="img-form"></label>
-                    <input type="number" placeholder="Telefone:">
+                    <div class="campo">
+                        <img src="/img/telephone.png" alt="" class="img-form">
+                        <input type="number" placeholder="Telefone:">
+                    </div>
                 </li>
+
                 <li>
-                    <label for="password"><img src="/img/password.png" alt="" class="img-form"></label>
-                    <input type="password" placeholder="Senha:">
+                    <div class="campo">
+                        <img src="/img/password.png" alt="" class="img-form">
+                        <input type="password" placeholder="Senha:">
+                    </div>
                 </li>
-                <button class="login">Fazer Login</button>
             </ul>
+            <button class="login">Fazer Login</button>
         </form>
     </section>
 
@@ -57,5 +68,6 @@
             </div>
         </div>
     </footer>
+    <script src="/script.js"></script>
 </body>
 </html>

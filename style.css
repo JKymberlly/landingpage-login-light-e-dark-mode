@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Farsan&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto Mono", monospace;
+    font-family: "Farsan", cursive;
+
+
 }
 body {
     min-height: 100vh;
@@ -12,7 +14,9 @@ body {
     background-image: url(/img/fundo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
+}
+body.dark{
+    background-color: #472300;
 }
 
 /* inicio estilização navbar */
@@ -27,16 +31,19 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-        list-style: none;
+    list-style: none;
 }
 .logo{
     height: 90px;
 }
 .navigation li a{
-    padding: 10px;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 35px;
     color: white;
+    transition: 0.5s ease;
+}
+.navigation li a:hover{
+    color: #472300;
 }
 #tema{
     height: 50px;
@@ -44,7 +51,7 @@ nav{
     font-size: 18px;
     border: none;
     border-radius: 20px;
-    background-color: #B87333;
+    background-color: #472300;
     color: white;
     cursor: pointer;
 }
@@ -61,28 +68,29 @@ section{
 }
 form{
     color: white;
-    height: 550px;
+    min-height: 550px;
     width: 420px;
     border-radius: 25px;
     background-color: #E5AA70;
-}
-form ul{
-    list-style: none;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.ul-form{
-    margin: 50px;
+    padding: 50px;
 }
 ul li{
-    margin: 10px;
+    list-style: none;
+    margin: 40px;
 }
 .img-cafe{
     height: 70px;
 }
 .img-form{
-    height: 25px;
+    height: 30px;
+}
+.campo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 form h1{
     align-items: center;
@@ -90,13 +98,13 @@ form h1{
     display: flex;
 }
 input{
-    height: 35px;
-    width: 230px;
+    height: 40px;
+    width: 250px;
     border-radius: 10px;
     border: none;
 }
 input::placeholder{
-    font-size: 15px;
+    font-size: 20px;
     position: relative;
     left: 10px;
 }
@@ -106,9 +114,15 @@ input::placeholder{
     font-size: 18px;
     border: none;
     border-radius: 30px;
-    background-color: #B87333;
+    background-color: #472300;
     color: white;
     cursor: pointer;
+    transition: 0.5s ease;
+}
+.login:hover{
+    height: 62px;
+    width: 152px;
+    font-size: 20px;
 }
 
 /* fim estilização principal */
@@ -125,5 +139,8 @@ footer{
     align-items: center;
     color: white;
 }
-
+.rodape p{
+    margin: 8px;
+    cursor: pointer;
+}
 /* fim roda pé */
