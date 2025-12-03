@@ -15,8 +15,43 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* dark tema */
+
 body.dark{
+    background-image: url(/img/dark.jpg);
+    backdrop-filter: blur(10px);
+}
+body.dark nav{
     background-color: #472300;
+}
+body.dark footer{
+    background-color: #472300;
+}
+body.dark #tema{
+    background-color: #D27D2D;
+}
+body.dark button{
+    background-color: #D27D2D;
+}
+body.dark form{
+    background-color: #472300;
+}
+body.dark li a:hover{
+    color: #E5AA70;
+    transition: 0.4 ease;
+}
+body.dark .telefone{
+    content: url(/img/telephone\ \(1\).png);
+}
+body.dark .senha{
+    content: url(/img/passworddark.png);
+}
+body.dark .email{
+    content: url(/img/emaillight.png);
+}
+body.dark .user{
+    content: url(/img/userlight.png);
 }
 
 /* inicio estilização navbar */
