@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(/img/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/* inicio estilização navbar */
+
+nav{
+    background-color: #D27D2D;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        list-style: none;
+}
+.logo{
+    height: 90px;
+}
+.navigation li a{
+    padding: 10px;
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+}
+#tema{
+    height: 50px;
+    width: 80px;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    background-color: #B87333;
+    color: white;
+    cursor: pointer;
+}
+
+/* fim estilização navbar */
+
+/* inicio estilização principal */
+
+section{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    color: white;
+    height: 550px;
+    width: 420px;
+    border-radius: 25px;
+    background-color: #E5AA70;
+}
+form ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ul-form{
+    margin: 50px;
+}
+ul li{
+    margin: 10px;
+}
+.img-cafe{
+    height: 70px;
+}
+.img-form{
+    height: 25px;
+}
+form h1{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+input{
+    height: 35px;
+    width: 230px;
+    border-radius: 10px;
+    border: none;
+}
+input::placeholder{
+    font-size: 15px;
+    position: relative;
+    left: 10px;
+}
+.login{
+    width: 150px;
+    height: 60px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    background-color: #B87333;
+    color: white;
+    cursor: pointer;
+}
+
+/* fim estilização principal */
+
+/* inicio roda pé */
+footer{
+    background-color: #D27D2D;
+    height: 80px;
+}
+.rodape{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+/* fim roda pé */
