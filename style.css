@@ -134,6 +134,7 @@ ul li{
     display: flex;
     align-items: center;
     gap: 10px;
+    background-color: none;
 }
 input:focus{
     outline: none;
