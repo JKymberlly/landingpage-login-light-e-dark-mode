@@ -17,6 +17,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+input{
+    background:transparent;
+}
+input::placeholder {
+  color: white;
+}
 
 /* dark tema */
 
@@ -58,6 +64,12 @@ body.dark .user{
 body.dark .rodape div p{
     color: #faf9f9;
 }
+body.dark .navigation li a{
+    color: #faf9f9;
+}
+body.dark .navigation li a:hover{
+    color: #ff8737;
+}
 
 /* inicio estilização navbar */
 
@@ -80,11 +92,11 @@ nav{
 .navigation li a{
     text-decoration: none;
     font-size: 35px;
-    color: white;
+    color: #472300;
     transition: 0.5s ease;
 }
 .navigation li a:hover{
-    color: #472300;
+    color: #ff8737;
 }
 #tema{
     height: 50px;
@@ -180,7 +192,6 @@ input::placeholder{
     cursor: pointer;
 }
 .links a, .lembrar a, .esqueceu a{
-    text-decoration: none;
     color: white;
 }
 /* fim estilização principal */
