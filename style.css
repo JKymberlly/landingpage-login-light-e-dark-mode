@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Farsan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Molle:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Farsan", cursive;
 
 
 }
@@ -23,19 +25,19 @@ body.dark{
     backdrop-filter: blur(10px);
 }
 body.dark nav{
-    background-color: #472300;
+    background-color: #4726005d;
 }
 body.dark footer{
-    background-color: #472300;
+    background-color: #4726005d;
 }
 body.dark #tema{
-    background-color: #D27D2D;
+    background-color: #ebcfb5;
 }
 body.dark button{
-    background-color: #D27D2D;
+    background-color: #b8732efd;
 }
 body.dark form{
-    background-color: #472300;
+    background-color: #b38047bb;
 }
 body.dark li a:hover{
     color: #E5AA70;
@@ -53,11 +55,14 @@ body.dark .email{
 body.dark .user{
     content: url(/img/userlight.png);
 }
+body.dark .rodape div p{
+    color: #faf9f9;
+}
 
 /* inicio estilização navbar */
 
 nav{
-    background-color: #D27D2D;
+    background-color: #ffffff9a;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -67,6 +72,7 @@ nav{
     justify-content: center;
     align-items: center;
     list-style: none;
+    font-family: "Molle";
 }
 .logo{
     height: 90px;
@@ -102,15 +108,17 @@ section{
     justify-content: center;
 }
 form{
-    color: white;
+    color: rgb(255, 255, 255);
     min-height: 550px;
     width: 420px;
-    border-radius: 25px;
-    background-color: #E5AA70;
+    border-radius: 45px;
+    background-color: #b38047bb;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 50px;
+    font-family: "Crafty Girls";
 }
 ul li{
     list-style: none;
@@ -127,15 +135,18 @@ ul li{
     align-items: center;
     gap: 10px;
 }
+input:focus{
+    outline: none;
+}
 form h1{
     align-items: center;
     justify-content: center;
     display: flex;
 }
 input{
-    height: 40px;
+    height: 35px;
     width: 250px;
-    border-radius: 10px;
+    border-radius: 45px;
     border: none;
 }
 input::placeholder{
@@ -144,27 +155,38 @@ input::placeholder{
     left: 10px;
 }
 .login{
-    width: 150px;
+    width: 250px;
     height: 60px;
-    font-size: 18px;
+    font-size: 25px;
     border: none;
     border-radius: 30px;
-    background-color: #472300;
+    background-color: #9b4d00;
     color: white;
     cursor: pointer;
-    transition: 0.5s ease;
+    font-family: "Molle";
 }
-.login:hover{
-    height: 62px;
-    width: 152px;
-    font-size: 20px;
+.links{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    bottom: 20px;
+    position: relative;
+    cursor: pointer;
+    font-size: 12px;
 }
-
+.links li, .lembrar a, .esqueceu a{
+    list-style: none;
+    cursor: pointer;
+}
+.links a, .lembrar a, .esqueceu a{
+    text-decoration: none;
+    color: white;
+}
 /* fim estilização principal */
 
 /* inicio roda pé */
 footer{
-    background-color: #D27D2D;
+    background-color: #ffffff9a;
     height: 80px;
 }
 .rodape{
@@ -172,10 +194,11 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color: white;
+    color: rgb(0, 0, 0);
 }
-.rodape p{
+.rodape div p{
     margin: 8px;
     cursor: pointer;
+    color: #080808;
 }
 /* fim roda pé */
